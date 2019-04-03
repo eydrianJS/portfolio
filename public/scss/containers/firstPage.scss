@@ -3,63 +3,194 @@ $white: #fff;
 $hidden-background: rgba(0, 0, 0, 0);
 
 body {
-    font: outline;
-    background-color: $dark-grey;
-    background-size: 100% auto;
-    text-align: center;
-    margin: 0px;
+  font: outline;
+  background-color: $dark-grey;
+  background-size: 100% auto;
+  text-align: center;
+  margin: 0px;
 }
 
 .App {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex {
-    .middle-box {
-        font-size: 32pt;
-        line-height: 36pt;
-        position: fixed;
-        top:40%;
-        .text {
-            color: $white;
-            .highlight {
-                color: #E31B6D;
-                // text-shadow: 0 0 20px $white;
-            }
-        }
-        button {
-            font-size: 26px;
-            margin: 20px 0 0 0;
-            color: $white;
-            justify-content: center; 
-            padding: 12px 20px 12px 20px;
-            background-color: $hidden-background; 
-            transition: all .5s;
-            cursor: pointer;            
-            .mdi {
-                display: inline-block;
-                font: normal normal normal 24px/1 "Material Design Icons";
-                font-size: inherit;
-                text-rendering: auto;
-                transform: translate(0, 0);
-                transition: transform .5s;
-                
-            }
-        }
-        button:hover {
-            .mdi {
-                transform: rotate(90deg)
-            }
-            background-color: #04C2C9;
-            border-color: #04C2C9;
-        }
+  .middle-box {
+    font-size: 32pt;
+    line-height: 36pt;
+    position: fixed;
+    top: 40%;
+    .text {
+      color: $white;
+      .highlight {
+        color: #e31b6d;
+        // text-shadow: 0 0 20px $white;
+      }
     }
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
+    button {
+      font-size: 26px;
+      margin: 20px 0 0 0;
+      color: $white;
+      justify-content: center;
+      padding: 12px 20px 12px 20px;
+      background-color: $hidden-background;
+      transition: all 0.5s;
+      cursor: pointer;
+      .mdi {
+        display: inline-block;
+        font: normal normal normal 24px/1 "Material Design Icons";
+        font-size: inherit;
+        text-rendering: auto;
+        transform: translate(0, 0);
+        transition: transform 0.5s;
+      }
+    }
+    button:hover {
+      .mdi {
+        transform: rotate(90deg);
+      }
+      background-color: #04c2c9;
+      border-color: #04c2c9;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.animation {
+  &:hover {
+    cursor: pointer;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  background-image: url(../img/walking.png);
+  position: absolute;
+  bottom: 0px;
+  left: -300px;
+  top: -314px;
+  width: 256px;
+  height: 314px;
+  overflow: hidden;
+  animation: walk 1s infinite steps(8), move 20s infinite, turn 20s infinite linear;
+//   -webkit-animation: walk 1s infinite steps(8), move 6s infinite alternate, turn 12s infinite linear; /* Safari 4+ */
+//   -moz-aanimation: walk 1s infinite steps(8), move 6s infinite alternate, turn 12s infinite linear ; /* Fx 5+ */
+//   -o-animation: walk 1s infinite steps(8), move 6s infinite alternate, turn 12s infinite linear; /* Opera 12+ */
+}
+
+@keyframes walk {
+  100% {
+    background-position: -2048px 0;
+  }
+}
+// @-webkit-keyframes walk {
+//   100% {
+//     background-position: -2048px 0;
+//   }
+// }
+// @-moz-keyframes walk {
+//   100% {
+//     background-position: -2048px 0;
+//   }
+// }
+// @-o-keyframes walk {
+//   100% {
+//     background-position: -2048px 0;
+//   }
+// }
+
+@keyframes move {
+    0% {
+        left: -300px;
+        top: -314px;
+    }
+    20% {
+        top: -300px;
+    }
+    25% {
+        top: -200px;
+        left: 105%;
+    }
+    45% {
+        left: 105%;
+    }
+    50% {
+        left: 100%;
+        top: 100%;
+    }
+    75% {
+        left: -300px;
+        top: 100%;
+    }
+    100% {
+        left: -300px;
+        top: -314px;
+    }
+}
+// @-webkit-keyframes move {
+//   0% {
+//     left: calc(30%);
+//   }
+//   100% {
+//     left: calc(100% - 256px);
+//   }
+// }
+// @-moz-keyframes move {
+//   0% {
+//     left: calc(30%);
+//   }
+//   25% {
+//     left: calc(100% - 256px);
+//   }
+//   50% {
+//     top: 0px;  
+//     left: calc(100% - 256px);
+//   }
+//   100% {
+//     left: calc(100% - 256px);
+//   }
+// }
+// @-o-keyframes move {
+//   0% {
+//     left: calc(30%);
+//   }
+//   100% {
+//     left: calc(100% - 256px);
+//   }
+// }
+
+@keyframes turn {
+    0% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    35% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    85% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

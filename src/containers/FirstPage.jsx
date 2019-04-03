@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button';
+import Animation from './Animation';
 
 class FirstPage extends Component {
     constructor(props) {
@@ -8,16 +9,19 @@ class FirstPage extends Component {
     }
     render() { 
         return ( 
+            <>
             <div className="flex">
                 <div className="middle-box">
                     <div className="text">
-                        Cześć, Jestem <span class="highlight">Adrian Olszowski</span>
+                        Cześć, Jestem <span className="highlight">Adrian Olszowski</span>
                         <br/>
                         I jestem full-stack web developer
                     </div>
                     <Button />
+                    <Animation />
                 </div> 
             </div>
+            </>
         );
     }
 }
