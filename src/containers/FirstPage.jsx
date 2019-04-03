@@ -5,7 +5,7 @@ import Animation from './Animation';
 class FirstPage extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {}
     }
     render() { 
         return ( 
@@ -17,7 +17,7 @@ class FirstPage extends Component {
                         <br/>
                         I jestem full-stack web developer
                     </div>
-                    <Button />
+                    <Button click={this.props.click}/>
                     <Animation />
                 </div> 
             </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Button = () => {
+const Button = (props) => {
     return ( 
-        <button type="submit">Zobacz więcej <i className="mdi mdi-arrow-right"></i></button>
+        <button type="submit" onClick={props.click}>Zobacz więcej <i className="mdi mdi-arrow-right"></i></button>
      );
 }
  
