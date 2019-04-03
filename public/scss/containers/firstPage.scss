@@ -69,6 +69,19 @@ body {
     -moz-animation-play-state: paused;
     -o-animation-play-state: paused;
     animation-play-state: paused;
+    .future {
+      display: block;
+    }  
+  }
+  .future {
+    font-size: 20px;
+    left:-80px;
+    top:-50px;
+    border: #04c2c9 1px solid;
+    border-radius: 100%;
+    padding: 20px;
+    position: absolute;
+    display: none;
   }
   background-image: url(../img/walking.png);
   position: absolute;
@@ -77,7 +90,7 @@ body {
   top: -314px;
   width: 256px;
   height: 314px;
-  overflow: hidden;
+  // overflow: hidden;
   animation: walk 1s infinite steps(8), move 20s infinite, turn 20s infinite linear;
 //   -webkit-animation: walk 1s infinite steps(8), move 6s infinite alternate, turn 12s infinite linear; /* Safari 4+ */
 //   -moz-aanimation: walk 1s infinite steps(8), move 6s infinite alternate, turn 12s infinite linear ; /* Fx 5+ */
