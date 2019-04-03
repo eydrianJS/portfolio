@@ -61,10 +61,55 @@ nav {
 }
 
 #about, #work {
-    height: 100%
+    height: 100%;
 }
 #work {
     background: #f5f5f5;
+}
+#about {
+    div {
+        display: inline-block;
+        margin: 50px 50px;
+        div {
+            flex-basis: 100%;
+            background-color: #04C2C9;
+            height: 90px;
+            color: #e31b6d;
+            font-size: 40px;
+            width: 50px;
+            display: inline-block;
+            position: relative;
+            i {
+                position: absolute;
+                top: 20px;
+                left: 0;
+                right: 0;
+                font-size: 45px;
+                color: #fff;
+                z-index: 1;
+            }
+            &::before {
+                position: absolute;
+                top: 0;
+                right: calc((100% / 2) - (100% /2));
+                background-color: inherit;
+                height: inherit;
+                width: inherit;
+                content: '';
+                transform: rotateZ(60deg);
+            }
+            &::after {
+                position: absolute;
+                top: 0;
+                right: calc((100% / 2) - (100% /2));
+                background-color: inherit;
+                height: inherit;
+                width: inherit;
+                content: '';
+                transform: rotateZ(-60deg);
+            }
+        }
+    }
 }
 
 
