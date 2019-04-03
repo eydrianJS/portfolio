@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Navbar from './body/Navbar'
+import About from './body/About'
+import Work from './body/Work'
 
 class Body extends Component {
     constructor(props) {
@@ -6,7 +9,13 @@ class Body extends Component {
         this.state = {  }
     }
     render() { 
-        return ( <div>ELO</div>   );
+        return ( 
+        <div className="body">
+            <Navbar clickHome={this.props.clickHome} />
+            <About />
+            <Work />
+        </div>   
+        );
     }
 }
  

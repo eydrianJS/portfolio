@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      openPage: true
+      openPage: false
     }
   }
 
@@ -21,7 +21,7 @@ class App extends Component {
       <div className="App">
           { openPage? <FirstPage 
                       click={this.handleFirstPageClick}/> 
-                    : <Body /> }
+                    : <Body clickHome={this.handleFirstPageClick}/> }
       </div>
     );
   }
