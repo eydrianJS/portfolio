@@ -1,9 +1,10 @@
 import React from 'react';
+import Hexas from './Hexas';
 
 const About = () => {
     return ( 
         <section id="about">
-            o mnie
+            <Hexas />
         </section> 
     );
 }
