@@ -1,0 +1,15 @@
+#blog {
+  background: #f5f5f5;
+  width: 100%;
+  position: flex;
+  text-align: center;
+}
+#blog :nth-child(n%3) {
+    float: left;
+    display: block;
+    clear: both;
+}  
+img {    
+    width: 400px;
+    height: 400px;
+}
