@@ -1,0 +1,88 @@
+#about {
+    height: 100%;
+    width: 100%;
+    background: #f5f5f5;
+    div {
+      @media (min-width: 1200px) {
+        margin: 55px 50px;
+      }
+      .opis-cechy {
+        border-block-start: thick double #32a1ce;
+        writing-mode: vertical-lr;
+        margin-left: 35px;
+        height: 90px;
+        @media (min-width: 1200px) {
+          height: 200px;
+          margin-left: -10px;
+          margin-top: 18px;
+        }
+        float: left;
+      }
+      .szeroki-opis-cechy {
+        margin-left: 0;
+        float: none;
+        display: block;
+        overflow: hidden;
+        max-width: 90%;      
+        @media (min-width: 1200px) {
+          max-width: 35%;
+          float: left;
+        }
+      }
+      .margin-effect {
+        float: left;
+        @media (min-width: 1200px) {
+          height: 180px;
+          float: none;
+        }
+      }
+  
+      .cecha {
+        float: left;
+        flex-basis: 100%;
+        background-color: #04c2c9;
+        height: 90px;
+        color: #e31b6d;
+        font-size: 40px;
+        width: 50px;
+        position: relative;
+        border: none;
+        i {
+          position: absolute;
+          top: 20px;
+          left: 0;
+          right: 0;
+          font-size: 45px;
+          color: #fff;
+          z-index: 1;
+        }
+        &::before {
+          position: absolute;
+          top: 0;
+          right: calc((100% / 2) - (100% / 2));
+          background-color: inherit;
+          height: inherit;
+          width: inherit;
+          content: "";
+          transform: rotateZ(60deg);
+        }
+        &::after {
+          position: absolute;
+          top: 0;
+          right: calc((100% / 2) - (100% / 2));
+          background-color: inherit;
+          height: inherit;
+          width: inherit;
+          content: "";
+          transform: rotateZ(-60deg);
+        }
+      }
+    }
+    .flex-cechy {
+      @media (max-width: 1200px) {
+        text-align: center;
+        float: none;
+        margin: 120px 80px auto;
+      }
+    }
+  }
