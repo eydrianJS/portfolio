@@ -62,9 +62,8 @@ nav {
 #about,
 #work {
   height: 100%;
-}
-#work {
-  background: #f5f5f5;
+  width: 100%;
+  background: #1b242f;
   text-align: center;
   margin: 0 auto;
   .body-work {
@@ -75,7 +74,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    color: #1b242f;
+    color: #f5f5f5;
   }
   .project-border {
     margin: 0 auto;
@@ -84,7 +83,7 @@ nav {
     text-align: center;
     height: 350px;
     width: 300px;
-    border: solid 1px #1b242f;
+    border: solid 1px #f5f5f5;
   }
   .image-border {
     margin: -60px 30px 20px 30px;
@@ -92,13 +91,14 @@ nav {
     width: 240px;
     background-image: url(../img/work1.jpg);
     background-size: cover;
+    border: solid 1px #f5f5f5;
   }
 }
 #about {
   background: #fff;
   width: 100%;
   div {
-    @media(min-width: 1200px) {
+    @media (min-width: 1200px) {
       margin: 70px 50px;
     }
     .opis-cechy {
@@ -106,7 +106,7 @@ nav {
       writing-mode: vertical-lr;
       margin-left: 35px;
       height: 90px;
-      @media(min-width: 1200px) {
+      @media (min-width: 1200px) {
         height: 200px;
         margin-left: -10px;
         margin-top: 18px;
@@ -177,8 +177,6 @@ nav {
     @media (max-width: 1200px) {
       text-align: center;
       float: none;
-    //   margin-top: 120px;
-    //   margin-left: 80px;
       margin: 120px 80px auto;
     }
   }

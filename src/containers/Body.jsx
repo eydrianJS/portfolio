@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './body/Navbar'
-import About from './body/About'
-import Work from './body/Work'
+import About from './body/about/About'
+import Work from './body/work/Work'
+import Blog from './body/blog/Blog'
 
 class Body extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class Body extends Component {
             <Navbar clickHome={this.props.clickHome} />
             <About />
             <Work />
+            <Blog />
         </div>   
         );
     }
