@@ -3,6 +3,7 @@ import Navbar from './body/Navbar'
 import About from './body/about/About'
 import Work from './body/work/Work'
 import Blog from './body/blog/Blog'
+import Contact from './body/contact/Contact';
 
 class Body extends Component {
     constructor(props) {
@@ -16,6 +17,7 @@ class Body extends Component {
             <About />
             <Work />
             <Blog />
+            <Contact />
         </div>   
         );
     }

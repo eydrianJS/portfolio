@@ -3,13 +3,15 @@
   width: 100%;
   position: flex;
   text-align: center;
+  .container {
+      margin: 0px auto;
+      padding: 60px;
+      max-width: 1200px;
+      font-size: 0;
+  }
 }
-#blog :nth-child(n%3) {
-    float: left;
-    display: block;
-    clear: both;
-}  
-img {    
-    width: 400px;
+img {  
+    width: 350px;
     height: 400px;
+    margin: 0px auto;
 }

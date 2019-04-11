@@ -3,14 +3,16 @@ import BlogImage from './BlogImage';
 
 const Blog = () => {
     return ( 
-    <div id="blog">
-        <BlogImage />
-        <BlogImage />
-        <BlogImage />
-        <BlogImage />
-        <BlogImage />
-        <BlogImage />
-    </div> 
+    <section id="blog">
+        <div className="container">
+            <BlogImage />
+            <BlogImage />
+            <BlogImage />
+            <BlogImage />
+            <BlogImage />
+            <BlogImage />
+        </div>
+    </section> 
     );
 }
  
