@@ -5,7 +5,7 @@ const Item = (props) => {
         <div className="project-border">
             <div className="image-border" style={{backgroundImage: `url(../img/${props.img})`}}>
             </div>
-                {props.content}
+            {props.content}
         </div>
      );
 }
