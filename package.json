@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aos": "^2.3.4",
     "gulp-sass": "4.0.1",
     "jquery": "^3.3.1",
     "jquery.easing": "^1.4.1",

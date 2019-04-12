@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import FirstPage from './containers/FirstPage';
 import Body from './containers/Body';
+import $ from "jquery";
+import AOS from "aos";
+require('jquery.easing');
+require('aos');
 
 class App extends Component {
   constructor(props) {
@@ -8,6 +12,25 @@ class App extends Component {
     this.state = { 
       openPage: false
     }
+  }
+
+  componentDidMount() {
+    $("div.js-scroll-trigger").click(function() {
+        var target = $("#" + $(this).attr("sect"));
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: (target.offset().top - 54)
+            }, 1000, "easeInOutExpo");
+            return false;
+            }
+    
+    });
+
+    AOS.init({
+      duration: 1000,
+      easing: 'slide',
+      once: false
+    })
   }
 
   handleFirstPageClick = () => {
