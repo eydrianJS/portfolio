@@ -11,7 +11,6 @@ class App extends Component {
   }
 
   handleFirstPageClick = () => {
-    console.log("elo");
     this.setState({ openPage: !this.state.openPage })    
   }
 
