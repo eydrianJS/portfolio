@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "gulp-sass": "4.0.1",
+    "jquery": "^3.3.1",
+    "jquery.easing": "^1.4.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
