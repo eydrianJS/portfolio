@@ -5,12 +5,12 @@ const Blog = () => {
     return ( 
     <section id="blog">
         <div className="container">
-            <BlogImage />
-            <BlogImage />
-            <BlogImage />
-            <BlogImage />
-            <BlogImage />
-            <BlogImage />
+            <BlogImage data-aos="flip-left"/>
+            <BlogImage data-aos="flip-left"/>
+            <BlogImage data-aos="flip-left"/>
+            <BlogImage data-aos="flip-left"/>
+            <BlogImage data-aos="flip-left"/>
+            <BlogImage data-aos="flip-left"/>
         </div>
     </section> 
     );
