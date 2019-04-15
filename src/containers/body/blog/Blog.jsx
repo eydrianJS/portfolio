@@ -1,17 +1,12 @@
 import React from 'react';
-import BlogImage from './BlogImage';
 
 const Blog = () => {
     return ( 
-    <section id="blog">
-        <div className="container">
-            <BlogImage data-aos="flip-left"/>
-            <BlogImage data-aos="flip-left"/>
-            <BlogImage data-aos="flip-left"/>
-            <BlogImage data-aos="flip-left"/>
-            <BlogImage data-aos="flip-left"/>
-            <BlogImage data-aos="flip-left"/>
-        </div>
+    <section id="blog" className="sticky">
+        <blockquote>"Mój dziwny napis"<span></span></blockquote>
+        <img id="office" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/office1.png" />
+        <img id="building" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/sky.jpg" />
+        <div id="box"/>
     </section> 
     );
 }
