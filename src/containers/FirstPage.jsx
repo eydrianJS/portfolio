@@ -17,7 +17,7 @@ class FirstPage extends Component {
                         <br/>
                         I jestem full-stack web developer
                     </div>
-                    <Button click={this.props.click}/>
+                    <Button click={this.props.click} name="Zobacz więcej"/>
                     <Animation />
                 </div> 
             </div>

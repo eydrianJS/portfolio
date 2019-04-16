@@ -4,132 +4,122 @@
     line-height: 56px;
     letter-spacing: 0.1em;
   }
-  min-height: 100vh;
   width: 100%;
   background: #1b242f;
   text-align: center;
   margin: 0 auto;
   color: #f3f3f3;
-  //   label {
-  //     float: none;
-  //   }
-  //   .col {
-  //     max-width: 1000px;
-  //     margin: 0 auto;
-  //   }
-  //   .form-group {
-  //     width: 50%;
-  //     float: left;
-  //   }
-  //   .form-input {
-  //     margin: 0 auto;
-  //     width: 90%;
-  //     height: 56px;
-  //     margin: 30px;
-  //     border-radius: 4px;
-  //     background-color: #f5f5f5;
-  //     transition: 0.3s all;
-  //     &:hover {
-  //         background-color: #04c2c9;
-  //       box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
-  //     }
-  //     &::placeholder {
-  //       color: #1b242f;
-  //       text-align: center;
-  //     }
-  //   }
-  //   .button-fill {
-  //     text-align: center;
-  //     background: #04c2c9;
-  //     text-transform: uppercase;
-  //     margin: 25px;
-
-  //     &.grey {
-  //       background: #04c2c9;
-  //       color: white;
-  //     }
-  //   }
-
-  //   .button-inside {
-  //     height: 54px;
-  //     top: 1px;
-  //     line-height: 54px;
-  //     color: #04c2c9;
-  //     background: #fff;
-  //     text-align: center;
-  //     overflow: hidden;
-  //   }
-
-  //   button {
-  //     width: 50%;
-  //     margin: 0 auto;
-  //   }
-    height: 100%;
-    display: grid;
+  .container {
     font-family: Avenir;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
-  // * {
-  //   box-sizing: border-box;
-  // }
-  .inp {
-    position: relative;
-    margin: auto;
-    width: 100%;
-    max-width: 280px;
+    padding-top: 10%;
+    .row {
+      display: flex;
+      float: block;
+      margin: 30px;
+      .inp {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 380px;
+        height: 100%;
+      }
+      .inp .label {
+        position: absolute;
+        top: 16px;
+        left: 0;
+        font-size: 16px;
+        color: #f5f5f5;
+        font-weight: 500;
+        transform-origin: 0 0;
+        transition: all 0.2s ease;
+      }
+      .inp .border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: #04c2c9;
+        transform: scaleX(0);
+        transform-origin: 0 0;
+        transition: all 0.15s ease;
+      }
+      .inp input,
+      .inp textarea {
+        -webkit-appearance: none;
+        width: 100%;
+        border: 0;
+        font-family: inherit;
+        padding: 12px 0;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+        border-bottom: 2px solid #04c2c9;
+        background: none;
+        border-radius: 0;
+        color: #04c2c9;
+        transition: all 0.15s ease;
+      }
+      .inp input:hover,
+      .inp textarea:hover {
+        background: rgba(34, 50, 84, 0.03);
+      }
+      .inp input:not(:placeholder-shown) + span,
+      .inp textarea:not(:placeholder-shown) + span {
+        color: #04c2c9;
+        transform: translateY(-26px) scale(0.75);
+      }
+      .inp input:focus,
+      .inp textarea:focus {
+        background: none;
+        outline: none;
+      }
+      .inp input:focus + span,
+      .inp textarea:focus + span {
+        color: #04c2c9;
+        transform: translateY(-26px) scale(0.75);
+      }
+      .inp input:focus + span + .border {
+        transform: scaleX(1);
+      }
+      textarea {
+        margin-top: 18px;
+        resize: none;
+        height: 200px !important;
+        line-height: 19px;
+      }
+    }
   }
-  .inp .label {
-    position: absolute;
-    top: 16px;
-    left: 0;
-    font-size: 16px;
-    color: #9098a9;
-    font-weight: 500;
-    transform-origin: 0 0;
-    transition: all 0.2s ease;
+}
+button {
+  font-size: 26px;
+  margin: 20px 0 0 0;
+  color: $white;
+  height: 90px;
+  justify-content: center;
+  padding: 12px 20px 12px 20px;
+  background-color: $hidden-background;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 380px;
+  .mdi {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    transform: translate(0, 0);
+    transition: transform 0.5s;
   }
-  .inp .border {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background: #07f;
-    transform: scaleX(0);
-    transform-origin: 0 0;
-    transition: all 0.15s ease;
-  }
-  .inp input {
-    -webkit-appearance: none;
-    width: 100%;
-    border: 0;
-    font-family: inherit;
-    padding: 12px 0;
-    height: 48px;
-    font-size: 16px;
-    font-weight: 500;
-    border-bottom: 2px solid #c8ccd4;
-    background: none;
-    border-radius: 0;
-    color: #223254;
-    transition: all 0.15s ease;
-  }
-  .inp input:hover {
-    background: rgba(34, 50, 84, 0.03);
-  }
-  .inp input:not(:placeholder-shown) + span {
-    color: #5a667f;
-    transform: translateY(-26px) scale(0.75);
-  }
-  .inp input:focus {
-    background: none;
-    outline: none;
-  }
-  .inp input:focus + span {
-    color: #07f;
-    transform: translateY(-26px) scale(0.75);
-  }
-  .inp input:focus + span + .border {
-    transform: scaleX(1);
+  &:hover {
+    .mdi {
+      transform: rotate(90deg);
+    }
+    background-color: #04c2c9;
+    border-color: #04c2c9;
   }
 }
