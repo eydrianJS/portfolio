@@ -1,12 +1,11 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
-const browserSync = require('browser-sync').create();
 
 function style() {
-
   return (
         gulp
             .src("./public/scss/**/style.scss")
+            .pipe(sass({includePaths: './node_modules/'}))
             .pipe(sass())
             // What is the destination for the compiled file?
             .pipe(gulp.dest("./public/css"))
@@ -15,11 +14,6 @@ function style() {
 }
 
 function watch() {
-    // browserSync.init({
-    //     server: {
-    //         baseDir: './'
-    //     }
-    // })
     gulp.watch("./public/scss/**/*.scss", style)
 }
 

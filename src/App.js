@@ -3,7 +3,7 @@ import FirstPage from "./containers/FirstPage";
 import Body from "./containers/Body";
 import $ from "jquery";
 import AOS from "aos";
-import { TimelineMax, TweenMax, Power4 } from 'gsap'
+import { TimelineMax,Power4 } from 'gsap'
 import ScrollMagic from 'scrollmagic'
 import ('imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators')
 import ('imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap')
@@ -67,7 +67,6 @@ const App = () => {
       .addTo(controller);
 
     function updatePercentage() {
-      //percent.innerHTML = (tl.progress() *100 ).toFixed();
       tl.progress();
     }
   });
