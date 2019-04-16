@@ -5,7 +5,9 @@
     letter-spacing: 0.1em;
   }
   width: 100%;
-  min-height: 900px;
+  @media (min-width: 1240px) {
+    min-height: 900px;
+  }
   background: #1b242f;
   text-align: center;
   margin: 0 auto;
