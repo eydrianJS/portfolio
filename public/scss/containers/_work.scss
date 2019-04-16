@@ -5,11 +5,11 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  @media (max-width: 1100px) {
+  @media (max-width: 1320px) {
     height: 1040px;
   }
-  @media (max-width: 840px) {
-    height: 1540px;
+  @media (max-width: 940px) {
+    height: 1640px;
   }
   .body-work {
     margin: 0 auto;
@@ -32,15 +32,6 @@
     &::after {
       width: 20px;
     }
-    // &:nth-child(2) {
-    //   animation: slice_right 1s ease-in-out;
-    // }
-    // &:nth-child(3) {
-    //   animation: slice_right 2s ease-in-out;
-    // }
-    // &:nth-child(4) {
-    //   animation: slice_right 3s ease-in-out;
-    // }
   }
   .image-border {
     margin: -80px 30px 20px 30px;
@@ -54,7 +45,6 @@
     border-bottom: 2px solid white;
     text-align: center;
     color: white;
-    // animation: slicer ease-in-out 1s;
     overflow: hidden;
   }
 }

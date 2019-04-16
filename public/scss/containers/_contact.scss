@@ -5,6 +5,7 @@
     letter-spacing: 0.1em;
   }
   width: 100%;
+  min-height: 900px;
   background: #1b242f;
   text-align: center;
   margin: 0 auto;
@@ -16,13 +17,25 @@
     padding-top: 10%;
     .row {
       display: flex;
+      @media (max-width: 755px) {
+        display: grid;
+      }
       float: block;
       margin: 30px;
       .inp {
         position: relative;
+        @media (max-width: 755px) {
+          display: block;
+        }
         margin: auto;
         width: 100%;
         max-width: 380px;
+        @media (max-width: 1000px) {
+          max-width: 280px;
+          @media (max-width: 755px) {
+            max-width: 90%;
+          }
+        }
         height: 100%;
       }
       .inp .label {
@@ -41,6 +54,12 @@
         left: 0;
         height: 2px;
         width: 100%;
+        @media (max-width: 1000px) {
+          max-width: 280px;
+          @media (max-width: 755px) {
+            max-width: 90%;
+          }
+        }
         background: #04c2c9;
         transform: scaleX(0);
         transform-origin: 0 0;
@@ -107,6 +126,12 @@ button {
   margin: auto;
   width: 100%;
   max-width: 380px;
+  @media (max-width: 1000px) {
+    max-width: 280px;
+    @media (max-width: 755px) {
+      max-width: 90%;
+    }
+  }
   .mdi {
     display: inline-block;
     font: normal normal normal 24px/1 "Material Design Icons";
