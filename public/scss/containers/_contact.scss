@@ -6,7 +6,7 @@
   }
   width: 100%;
   @media (min-width: 1240px) {
-    min-height: 900px;
+    min-height: 800px;
   }
   background: #1b242f;
   text-align: center;
@@ -16,7 +16,7 @@
     font-family: Avenir;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
-    padding-top: 10%;
+    padding-top: 5%;
     .row {
       display: flex;
       @media (max-width: 755px) {
