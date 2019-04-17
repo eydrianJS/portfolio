@@ -154,7 +154,7 @@
     transform: translate(0px, 0);
   }
 }
-// @media (max-width: 450px) {
+@media (max-width: 450px) {
   #about {
     width: 100vw;
     height: 100vh;
@@ -177,4 +177,4 @@
       }
     }  
   }
-// }
+}
