@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://eydrianJS.github.io/portfolio",
+  "homepage": "https://eydrianJS.github.io/portfolio/public",
   "dependencies": {
     "aos": "^2.3.4",
     "formik": "^1.5.2",

@@ -72,11 +72,12 @@ const App = () => {
   });
 
   const scrollBody = el => {
-    var target = $("#" + $(el).attr("dest"));
+    let target = $("#" + $(el).attr("dest"));
     if (target.length) {
+      let offset = $("body").width() > 450? target.offset().top - 54: target.offset().top;
       $("html, body").animate(
         {
-          scrollTop: target.offset().top - 54
+          scrollTop: offset
         },
         1000,
         "easeInOutExpo"

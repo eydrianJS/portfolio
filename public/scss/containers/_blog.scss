@@ -58,3 +58,10 @@ section {
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
   }
+
+  // @media (max-width: 450px) {
+   #blog {
+     height: 100vh;
+     min-height: 100vh;
+   }
+  // }

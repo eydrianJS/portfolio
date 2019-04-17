@@ -57,15 +57,16 @@ nav {
   position: fixed;
 }
 //###################################################
-@media (max-width: 450px) {
+// @media (max-width: 450px) {
   .menu-flex {
     display: block;
     height: 100%;
     font-size: 40px;
     position: fixed;
+    opacity: 0.95;
   }
   .menu-flex-none {
-    display: none;
+    display: none;    
   }
   .nav {
     margin-top: 30px;
@@ -101,4 +102,4 @@ nav {
     opacity: 1;
     z-index: 99;
   }
-}
+// }
