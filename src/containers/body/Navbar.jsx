@@ -40,11 +40,7 @@ const Navbar = props => {
         </div>
       </nav>
       <div className="menu">
-        {openMenu ? (
-          <i className="mdi mdi-mixer" onClick={() => setOpenMenu(!openMenu)} />
-        ) : (
-          <i className="mdi mdi-menu" onClick={() => setOpenMenu(!openMenu)} />
-        )}
+          <i className={openMenu ? "mdi mdi-mixer"  : "mdi mdi-menu" } onClick={() => setOpenMenu(!openMenu)} />
       </div>
     </>
   );
