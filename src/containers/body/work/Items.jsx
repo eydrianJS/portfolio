@@ -6,7 +6,7 @@ const items = [
         id: 1,
         title: "tytul",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint alias est nobis accusantium libero quia ut ipsum, recusandae quos amet deleniti debitis. Nihil quisquam perspiciatis magnam non, velit assumenda.",
-        img: "work1.jpg",
+        img: "conf.jpg",
         delay: 0
     },
     {
@@ -20,7 +20,7 @@ const items = [
         id: 3,
         title: "tytul",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint alias est nobis accusantium libero quia ut ipsum, recusandae quos amet deleniti debitis. Nihil quisquam perspiciatis magnam non, velit assumenda.",
-        img: "work1.jpg",
+        img: "javascript.jpg",
         delay: 600
     },
 ]

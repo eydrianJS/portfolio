@@ -30,20 +30,14 @@ app.post("/api/form", (req, res) => {
     });
 
     let mailOptions = {
-      //   from: "test@testaccount.com",
-      //   to: "maryjane.vonrueden32@ethereal.email",
-      //   replyTo: "test@testaccount.com",
-      //   subject: "message",
-      //   text: req.body.message,
-      //   html: htmlEmail
-
-      from: '"Fred Foo 👻" <foo@example.com>', // sender address
-      to: "maryjane.vonrueden32@ethereal.email", // list of receivers
-      subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
-      html: "<b>Hello world?</b>" // html body
+        from: "test@testaccount.com",
+        to: "maryjane.vonrueden32@ethereal.email",
+        replyTo: "test@testaccount.com",
+        subject: "message",
+        text: req.body.message,
+        html: htmlEmail
     };
-    console.log("hej");
+
     transporter.sendMail(mailOptions, (err, info) => {
       if (err) {
         console.log("Error occurred. " + err.message);
@@ -54,7 +48,6 @@ app.post("/api/form", (req, res) => {
       // Preview only available when sending through an Ethereal account
       console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     });
-    console.log("ej");
   });
 });
 
