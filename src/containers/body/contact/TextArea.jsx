@@ -10,6 +10,8 @@ const TextArea = props => {
         rows="5"
         placeholder="&nbsp;"
         maxLength="300"
+        value={props.value}
+        onChange={props.change}
       />
       <span className="label">{props.label}</span>
       <span className="border" />
