@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/expressJs/node_modules
 /.pnp
 .pnp.js
 package-lock.json

@@ -2,9 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001",
   "homepage": "https://eydrianJS.github.io/portfolio/public",
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^0.18.0",
     "formik": "^1.5.2",
     "gh-pages": "^2.0.1",
     "gsap": "^2.1.2",
