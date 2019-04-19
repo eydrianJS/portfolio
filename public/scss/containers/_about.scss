@@ -1,6 +1,11 @@
 #about {
   width: 100%;
   height: 100%;
+  @font-face {
+    font-family: Automati;
+    src: url(LobsterTwo-Italic.otf);
+  }
+  font-family: Automati;
   padding: 3em;
   max-height: 1000px;
   min-height: 800px;
@@ -40,6 +45,7 @@
       display: block;
       overflow: hidden;
       max-width: 90%;
+      font-family: Automati;
       @media (min-width: 1200px) {
         max-width: 35%;
         float: left;
@@ -166,8 +172,8 @@
       .opis-cechy {
         display: none;
       }
-      .szeroki-opis-cechy {      
-        margin:30px auto;
+      .szeroki-opis-cechy {
+        margin: 30px auto;
         text-align: center;
         max-width: 80%;
         font-size: xx-large;
@@ -176,6 +182,6 @@
         float: none;
         margin: auto;
       }
-    }  
+    }
   }
 }

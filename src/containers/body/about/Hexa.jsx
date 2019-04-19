@@ -6,8 +6,8 @@ const HexaItem = props => {
         <div className="cecha">
           <i className={"mdi " + props.item} />
         </div>
-        <div className="opis-cechy">ELDO</div>
-        <div className="szeroki-opis-cechy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi saepe qui natus incidunt tempora voluptatem pariatur commodi? Ea, rerum ducimus! Provident consequatur quos doloremque fugiat quidem sequi quibusdam ducimus?</div>
+        <div className="opis-cechy">{props.label}</div>
+        <div className="szeroki-opis-cechy">{props.content}</div>
         <div className="margin-effect"></div>
       </div>
     );
