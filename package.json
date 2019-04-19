@@ -5,6 +5,7 @@
   "proxy": "http://localhost:3001",
   "homepage": "https://eydrianJS.github.io/portfolio/public",
   "dependencies": {
+    "@glidejs/glide": "^3.2.7",
     "aos": "^2.3.4",
     "axios": "^0.18.0",
     "formik": "^1.5.2",

@@ -5,21 +5,21 @@ const items = [
     {
         id: 1,
         title: "tytul",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint alias est nobis accusantium libero quia ut ipsum, recusandae quos amet deleniti debitis. Nihil quisquam perspiciatis magnam non, velit assumenda.",
+        content: "Tworzenie stron internetowych, w szczególności implementacja formularzy sprzedażowych korzystając z wewnętrznych rozwiązań (FreeMarker(ftl), HTML, CSS, JavaScript, JQuery , XML, Groovy)",
         img: "conf.jpg",
         delay: 0
     },
     {
         id: 2,
         title: "tytul",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint alias est nobis accusantium libero quia ut ipsum, recusandae quos amet deleniti debitis. Nihil quisquam perspiciatis magnam non, velit assumenda.",
+        content: "Tworzenie i rozwój REST API dla partnerów firmy za pomocą PHP(laravel) oraz Mongodb",
         img: "work1.jpg",
         delay: 300
     },
     {
         id: 3,
         title: "tytul",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint alias est nobis accusantium libero quia ut ipsum, recusandae quos amet deleniti debitis. Nihil quisquam perspiciatis magnam non, velit assumenda.",
+        content: "Rozwój wewnętrznej aplikacji pomocniczej do obsługi bazy Oracle oraz bazy Postgress i Mongo z użyciem Python oraz Flask, Rozwój wewnętrznej aplikacji do przerzucania plików na serwer ftp(WinScp), utworzonej w NodeJs oraz Vue.JS",
         img: "javascript.jpg",
         delay: 600
     },
