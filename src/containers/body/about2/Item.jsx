@@ -1,8 +1,8 @@
 import React from "react";
 
-const Item = () => {
+const Item = (props) => {
   return (
-      <img src="../img/biurko.jpg" alt=""/>
+      <img src={`../img/${props.scr}.jpg`} alt=""/>
   );
 };
 

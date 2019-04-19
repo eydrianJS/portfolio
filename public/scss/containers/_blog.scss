@@ -21,7 +21,15 @@ section {
       margin-top: 20px;
     }
   }
+}
+section:nth-child(odd) {
+  background: #f1f1f1;
+}
+.blog {
+  background: white !important;
+}
 
+#blog {
   img {
     position: absolute;
   }
@@ -37,12 +45,6 @@ section {
     top: 29%;
     margin-top: 15%;
   }
-}
-section:nth-child(odd) {
-  background: #f1f1f1;
-}
-.blog {
-  background: white !important;
 }
 
 .percentage {
