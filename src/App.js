@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FirstPage from "./containers/portfolio/FirstPage";
 import Body from "./containers/portfolio/Body";
+import ToDoList from "./containers/todolist/ToDoList"
 import $ from "jquery";
 import AOS from "aos";
 import { TimelineMax, Power4 } from "gsap";
@@ -12,6 +13,7 @@ require("aos");
 
 const App = () => {
   const [openPage, setOpenPage] = useState(false);
+  const [openToDoList, setOpenToDoList] = useState(true);
 
   useEffect(() => {
     $("div.js-scroll-trigger").click(elem => {
@@ -87,11 +89,15 @@ const App = () => {
 
   return (
     <div className="App">
-      {openPage ? (
-        <FirstPage click={() => setOpenPage(!openPage)} />
-      ) : (
-        <Body clickHome={() => setOpenPage(!openPage)} />
-      )}
+      {
+        openToDoList? (
+          <ToDoList />
+        ) : openPage? (
+          <FirstPage click={() => setOpenPage(!openPage)} />
+        ) : (
+          <Body clickHome={() => setOpenPage(!openPage)} openTodo={() => setOpenToDoList(true)}  />
+        )
+      }
     </div>
   );
 };

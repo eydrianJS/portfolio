@@ -18,7 +18,7 @@ class Body extends Component {
         <Navbar clickHome={this.props.clickHome} />
         <About />
         <Work />
-        <Blog />
+        <Blog openTodo={this.props.openTodo}/>
         <Contact />
         <Footer />
       </div>
