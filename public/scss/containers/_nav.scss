@@ -57,7 +57,7 @@ nav {
   position: fixed;
 }
 //###################################################
-@media (max-width: 450px) {
+@media only screen {
   .menu-flex {
     display: block;
     height: 100%;

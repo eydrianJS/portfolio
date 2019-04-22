@@ -65,7 +65,7 @@ section:nth-child(odd) {
   right: 0;
 }
 
-@media (max-width: 450px) {
+@media only screen {
   #blog {
     height: 100vh;
     min-height: 100vh;
