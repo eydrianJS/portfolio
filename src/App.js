@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import FirstPage from "./containers/FirstPage";
-import Body from "./containers/Body";
+import FirstPage from "./containers/portfolio/FirstPage";
+import Body from "./containers/portfolio/Body";
 import $ from "jquery";
 import AOS from "aos";
 import { TimelineMax, Power4 } from "gsap";

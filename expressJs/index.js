@@ -7,6 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post("/api/form", (req, res) => {
+  console.log("dzial");
   nodemailer.createTestAccount((err, account) => {
     if (err) {
       console.error("Failed to create a testing account. " + err.message);
@@ -19,20 +20,18 @@ app.post("/api/form", (req, res) => {
             <li>Nazwisko: ${req.body.lastName}</li>
         </ul>
       `;
-    let transporter = nodemailer.createTransport({
-      host: 'smtp.ethereal.email',
-      port: '587',
-      secure: 'STARTTLS',
-      auth: {
-        user: "maryjane.vonrueden32@ethereal.email",
-        pass: "ZTchAR2GRnhq8XtyKq"
-      }
-    });
+      let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+               user: 'adrian.olszowski10.10@gmail.com',
+               pass: process.env.PASSWORD
+           }
+       });
 
     let mailOptions = {
-        from: "test@testaccount.com",
-        to: "maryjane.vonrueden32@ethereal.email",
-        replyTo: "test@testaccount.com",
+        from: "adrian.olszowski10.10@gmail.com",
+        to: "adrian.olszowski10.10@gmail.com",
+        replyTo: "adrian.olszowski10.10@gmail.com",
         subject: "message",
         text: req.body.message,
         html: htmlEmail
