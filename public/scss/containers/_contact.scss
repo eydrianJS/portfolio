@@ -41,7 +41,11 @@
           }
         }
         height: 100%;
+        @media only screen and (max-width: 600px) {
+          max-width: 90%;
+        }
       }
+      
       .inp .label {
         position: absolute;
         top: 16px;
