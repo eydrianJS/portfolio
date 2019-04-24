@@ -13,7 +13,7 @@ require("aos");
 
 const App = () => {
   const [openPage, setOpenPage] = useState(false);
-  const [openToDoList, setOpenToDoList] = useState(true);
+  const [openToDoList, setOpenToDoList] = useState(false);
 
   useEffect(() => {
     $("div.js-scroll-trigger").click(elem => {
