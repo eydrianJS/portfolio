@@ -1,0 +1,127 @@
+@mixin ul-none() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  @include ul-none();
+}
+
+nav {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  text-align: left;
+  z-index: 99;
+}
+
+.nav {
+  div {
+    margin: 0 20px;
+    padding: initial;
+    font-size: initial;
+    display: inline;
+    color: #04c2c9;
+    cursor: pointer;
+    transition: color 0.5s;
+    text-transform: uppercase;
+    &:hover {
+      color: #e31b6d;
+    }
+    flex-direction: row;
+  }
+  max-width: 1200px;
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  background: #333;
+  height: 0;
+  transition: height 0.3s ease-out;
+}
+
+.body {
+  background-size: 100% auto;
+  height: 100vh;
+  width: 100%;
+}
+.menu-flex, .menu-flex-none {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+//###################################################
+@media only screen and (max-width: 600px) {
+  .menu-flex {
+    display: block;
+    height: 100%;
+    font-size: 40px;
+    position: fixed;
+    opacity: 0.95;
+    animation: show 1s ease-in-out;
+  }
+  .menu-flex-none {
+    animation: hide 2s forwards;
+  }
+  .nav {
+    margin-top: 30px;
+    div {
+      text-align: center;
+      margin: 20px;
+      font-size: 80px;
+      display: block;
+      color: #04c2c9;
+      cursor: pointer;
+      transition: color 0.5s;
+      text-transform: uppercase;
+      &:hover {
+        color: #e31b6d;
+      }
+    }
+    max-width: 1200px;
+    width: 100%;
+    position: absolute;
+    top: 105px;
+    background: #333;
+    transition: height 0.6s ease-out;
+  }
+  .menu {
+    display: block;
+    position: fixed;
+    float: right;
+    top: 30px;
+    font-size: 15px;
+    color: #04c2c9;
+    font-size: 100px;
+    right: 30px;
+    opacity: 1;
+    z-index: 99;
+  }
+}
+@keyframes show {
+  0% {
+    transform: translate(0px, -180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0);
+    opacity: 0.95;
+  }
+}
+@keyframes hide {
+  0% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, -800px);
+    display: none;
+    opacity: 0;
+  }
+}
