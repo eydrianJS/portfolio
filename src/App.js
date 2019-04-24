@@ -12,7 +12,7 @@ require("jquery.easing");
 require("aos");
 
 const App = () => {
-  const [openPage, setOpenPage] = useState(false);
+  const [openPage, setOpenPage] = useState(true);
   const [openToDoList, setOpenToDoList] = useState(false);
 
   useEffect(() => {

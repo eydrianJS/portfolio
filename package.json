@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
-  "homepage": "https://eydrianjs.github.io/portfolio/",
+  "homepage": "https://eydrianjs.github.io/portfolio",
   "dependencies": {
     "@glidejs/glide": "^3.2.7",
     "aos": "^2.3.4",

@@ -2,7 +2,7 @@ import React from "react";
 
 const Item = (props) => {
   return (
-      <img src={`../img/${props.scr}.jpg`} alt=""/>
+      <img src={`{{site.baseurl}}/../img/${props.scr}.jpg`} alt=""/>
   );
 };
 
