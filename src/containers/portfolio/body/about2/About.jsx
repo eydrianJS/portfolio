@@ -41,23 +41,23 @@ const About = () => {
         <div className="glider glider-persp draggable">
           <div>
             <Item scr="slider" />
-            <div>cos napisane</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
           </div>
           <div>
             <Item scr="biurko" />
-            <div>cos napisane</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
           </div>
           <div>
             <Item scr="slider1" />
-            <div>cos napisane</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
           </div>
           <div>
             <Item scr="slider2" />
-            <div>cos napisane</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
           </div>
           <div>
             <Item scr="slider3" />
-            <div>cos napisane</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
           </div>
         </div>
         <button role="button" aria-label="Previous" className="glider-prev">

@@ -47,7 +47,7 @@ nav {
 .body {
   background-size: 100% auto;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 .menu-flex, .menu-flex-none {
   display: flex;
@@ -59,10 +59,13 @@ nav {
 //###################################################
 @media only screen and (max-width: 600px) {
   .menu-flex {
+    margin: 0;
+    padding: 0;
     display: block;
     height: 100%;
+    width: 100%;
     font-size: 40px; 
-    position: fixed;
+    position: fixed !important;
     opacity: 0.95;
     animation: show 1s ease-in-out;
   }
