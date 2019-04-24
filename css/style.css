@@ -320,12 +320,15 @@ nav {
 
 @media only screen and (max-width: 650px) {
   #work {
+    margin: 0px;
+    padding: 0px;
     display: contents; }
   #work .body-work {
     margin: 0 auto;
     padding: 0px; }
   #work .project-border {
-    margin: 40px; } }
+    margin: 0px;
+    margin-bottom: 40px; } }
 
 @media only screen and (max-width: 650px) and (max-width: 940px) {
   #work .project-border {
@@ -627,7 +630,27 @@ section:nth-child(odd) {
 @media only screen and (max-width: 600px) {
   #blog {
     height: 100vh;
-    min-height: 100vh; } }
+    min-height: 100vh;
+    position: relative; }
+  #blog blockquote {
+    position: relative; }
+  #blog img {
+    position: relative;
+    width: 90%; }
+  #blog img:nth-of-type(1) {
+    width: 90%;
+    right: 0;
+    top: 20%; }
+  #blog img:nth-of-type(2) {
+    width: 90%;
+    right: 0;
+    top: 29%;
+    margin-top: 15%; }
+  #blog #box {
+    top: -30%;
+    left: 0;
+    bottom: 0;
+    right: -35%; } }
 
 .todoapp button {
   height: auto;
