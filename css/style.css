@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden; }
+
 body font {
   size: 50px; }
 
@@ -174,7 +177,7 @@ nav {
 .body {
   background-size: 100% auto;
   height: 100vh;
-  width: 100%; }
+  width: 100vw; }
 
 .menu-flex, .menu-flex-none {
   display: flex;
@@ -185,10 +188,13 @@ nav {
 
 @media only screen and (max-width: 600px) {
   .menu-flex {
+    margin: 0;
+    padding: 0;
     display: block;
     height: 100%;
+    width: 100%;
     font-size: 40px;
-    position: fixed;
+    position: fixed !important;
     opacity: 0.95;
     animation: show 1s ease-in-out; }
   .menu-flex-none {
@@ -204,7 +210,7 @@ nav {
   .nav div {
     text-align: center;
     margin: 20px;
-    font-size: 80px;
+    font-size: 50px;
     display: block;
     color: #04c2c9;
     cursor: pointer;
@@ -216,11 +222,10 @@ nav {
     display: block;
     position: fixed;
     float: right;
-    top: 30px;
-    font-size: 15px;
+    top: -10px;
+    font-size: 60px;
     color: #04c2c9;
-    font-size: 100px;
-    right: 30px;
+    right: 0;
     opacity: 1;
     z-index: 99; } }
 
@@ -313,6 +318,19 @@ nav {
   100% {
     transform: translate(0px, 0); } }
 
+@media only screen and (max-width: 650px) {
+  #work {
+    display: contents; }
+  #work .body-work {
+    margin: 0 auto;
+    padding: 0px; }
+  #work .project-border {
+    margin: 40px; } }
+
+@media only screen and (max-width: 650px) and (max-width: 940px) {
+  #work .project-border {
+    margin-top: 120px; } }
+
 #about {
   width: 100%;
   height: 100%;
@@ -330,6 +348,23 @@ nav {
   height: 50px;
   opacity: 0.6;
   width: 50px; }
+
+@media only screen and (max-width: 600px) {
+  #about {
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    background: #f5f5f5;
+    align-items: center;
+    display: flex; }
+  #about img {
+    height: auto;
+    width: auto;
+    margin: 0 auto; }
+  #about .glider-prev, #about .glider-next {
+    height: 50px;
+    opacity: 0.6;
+    width: 50px; } }
 
 #contact {
   height: auto;
@@ -526,6 +561,10 @@ footer .mdi {
   footer .mdi {
     margin: 10px 20px 0 20px; } }
 
+@media only screen and (max-width: 600px) {
+  footer .mdi {
+    font-size: 40px; } }
+
 section {
   padding: 3em;
   height: 100vh;
@@ -589,3 +628,21 @@ section:nth-child(odd) {
   #blog {
     height: 100vh;
     min-height: 100vh; } }
+
+.todoapp button {
+  height: auto;
+  width: auto;
+  font-size: 15px;
+  overflow: hidden; }
+
+.todoapp input {
+  margin: 15px;
+  padding: 5px 10px;
+  font-size: 20px; }
+
+.todoapp .form {
+  font-size: 20px; }
+
+.todoapp .form button {
+  padding: 3px 10pc;
+  text-transform: uppercase; }
