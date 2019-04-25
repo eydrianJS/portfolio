@@ -64,7 +64,20 @@ section:nth-child(odd) {
   left: 0;
   bottom: 0;
   right: 0;
+  .mdi {
+    cursor: pointer;
+    display: contents;
+    color: #04c2c9;
+    font-size: 60px;
+    transform: translate(0, 0);
+    transition: transform 0.5s;
+    margin: 20px 80px 0 40px;
+    @media (max-width: 800px) {
+      margin: auto;
+    }
+  }
 }
+
 
 @media only screen and (max-width: 600px) {
   #blog {
