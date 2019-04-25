@@ -35,7 +35,7 @@ const AddTask = props => {
         onChange={() => setChecked(!checked)}
         id="important"
       />
-      <label htmlFor="important">Priorytet</label> <br />
+      <label htmlFor="important">Priorytet </label> <br/>
       <label htmlFor="duedate">Do kiedy zrobić</label>
       <input
         type="date"
@@ -44,8 +44,8 @@ const AddTask = props => {
         max={maxDate}
         onChange={e => setDate(e.target.value)}
       />
-      <br />
-      <button onClick={handleClick}>DODAJ</button>
+      
+      <button onClick={handleClick} className="add-button">DODAJ</button>
     </div>
   );
 };

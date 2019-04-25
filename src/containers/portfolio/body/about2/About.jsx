@@ -15,7 +15,7 @@ const About = () => {
       responsive: [
         {
           // screens greater than >= 775px
-          breakpoint: 775,
+          breakpoint: 1025,
           settings: {
             // Set to `auto` and provide item width to adjust to viewport
             slidesToShow: 2,
@@ -25,7 +25,7 @@ const About = () => {
         },
         {
           // screens greater than >= 1024px
-          breakpoint: 1024,
+          breakpoint: 1441,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
