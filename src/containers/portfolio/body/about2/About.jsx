@@ -50,17 +50,17 @@ const About = () => {
               </div>
             </div>
             <div>
-              <Item scr="biurko" />
-              <div>
-              Technologie używane poza pracą komercyją<br/>
-              › ReactJS, Redux, NodeJS, ECMAScript6, Bootstrap
-              </div>
-            </div>
-            <div>
               <Item scr="slider1" />
               <div>
                   <a href='/pdf/Adrian-Olszowski-PL.pdf' download>Polskie CV</a>
                   <a href='/pdf/Adrian-Olszowski.pdf' download>English CV</a>
+              </div>
+            </div>
+            <div>
+              <Item scr="biurko" />
+              <div>
+              Technologie używane poza pracą komercyją<br/>
+              › ReactJS, Redux, NodeJS, ECMAScript6, Bootstrap
               </div>
             </div>
           </div>
