@@ -364,7 +364,11 @@ nav {
   justify-content: center;
   padding: 12px 20px 12px 20px;
   background-color: rgba(0, 0, 0, 0);
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap; }
 
 #about a:hover {
   background-color: #04c2c9;

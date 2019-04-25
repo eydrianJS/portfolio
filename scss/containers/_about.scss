@@ -16,6 +16,10 @@
     padding: 12px 20px 12px 20px;
     background-color: $hidden-background;
     transition: all 0.5s;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
     &:hover {
       background-color: #04c2c9;
       border-color: #04c2c9;
