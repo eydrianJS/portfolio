@@ -1,6 +1,5 @@
 body {
-  overflow-x: hidden;
-  font-family: cursive; }
+  overflow-x: hidden; }
 
 body font {
   size: 50px; }
@@ -18,6 +17,7 @@ body {
   align-items: center; }
 
 .flex {
+  font-family: 'Lobster', cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +47,7 @@ body {
 
 .flex .middle-box button .mdi {
   display: inline-block;
-  font: normal normal normal 24px/1 "Material Design Icons";
+  font: normal normal normal 24px/1;
   font-size: inherit;
   text-rendering: auto;
   transform: translate(0, 0);
@@ -142,6 +142,7 @@ ul {
   margin: 0; }
 
 nav {
+  font-family: cursive;
   top: 0;
   left: 0;
   position: absolute;
@@ -250,6 +251,7 @@ nav {
     opacity: 0; } }
 
 #work {
+  font-family: 'Mukta', sans-serif;
   min-height: 100%;
   width: 100%;
   background: #1b242f;
@@ -369,7 +371,7 @@ nav {
   border-color: #04c2c9; }
 
 #about div {
-  font-family: cursive; }
+  font-family: 'Pacifico', cursive; }
 
 #about img {
   height: 400px;
@@ -414,7 +416,7 @@ nav {
   color: #f3f3f3; }
 
 #contact * {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Mukta', sans-serif;
   line-height: 56px;
   letter-spacing: 0.1em; }
 
@@ -610,7 +612,8 @@ section {
   position: relative;
   box-sizing: border-box;
   background-color: #f5f5f5;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'Mukta', sans-serif; }
 
 section blockquote {
   font-size: 2.3em;
