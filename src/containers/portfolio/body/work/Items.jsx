@@ -14,14 +14,14 @@ const items = [
         title: "tytul",
         content: "Tworzenie i rozwój REST API dla partnerów firmy za pomocą PHP(laravel) oraz Mongodb",
         img: "work1.jpg",
-        delay: 300
+        delay: 150
     },
     {
         id: 3,
         title: "tytul",
         content: "Rozwój wewnętrznej aplikacji pomocniczej do obsługi bazy Oracle oraz bazy Postgress i Mongo z użyciem Python oraz Flask, Rozwój wewnętrznej aplikacji do przerzucania plików na serwer ftp(WinScp), utworzonej w NodeJs oraz Vue.JS",
         img: "javascript.jpg",
-        delay: 600
+        delay: 300
     },
 ]
 
