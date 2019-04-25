@@ -52,8 +52,8 @@ const About = () => {
             <div>
               <Item scr="slider1" />
               <div>
-                  <a href='/pdf/Adrian-Olszowski-PL.pdf' download>Polskie CV</a>
-                  <a href='/pdf/Adrian-Olszowski.pdf' download>English CV</a>
+                  <a href='{{site.baseurl}}/../pdf/Adrian-Olszowski-PL.pdf' download>Polskie CV</a>
+                  <a href='{{site.baseurl}}/../pdf/Adrian-Olszowski.pdf' download>English CV</a>
               </div>
             </div>
             <div>
