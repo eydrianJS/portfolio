@@ -587,7 +587,7 @@ section blockquote {
 
 section blockquote span {
   width: 100%;
-  background: red;
+  background: #04c2c9;
   display: block;
   height: 5px;
   margin-top: 20px; }
