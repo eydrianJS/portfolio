@@ -36,38 +36,65 @@ const About = () => {
     });
   });
   return (
-    <section id="about">
-      <div className="glider-contain">
-        <div className="glider glider-persp draggable">
-          <div>
-            <Item scr="slider" />
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
+    <div className="about">
+      <section id="about">
+        <div className="glider-contain">
+          <div className="glider glider-persp draggable">
+            <div>
+              <Item scr="slider" />
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates distinctio alias possimus aperiam inventore ratione.
+                Fuga saepe tempora vitae expedita quidem velit, itaque
+                laboriosam ratione molestiae ducimus ea dolorem iste.
+              </div>
+            </div>
+            <div>
+              <Item scr="biurko" />
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates distinctio alias possimus aperiam inventore ratione.
+                Fuga saepe tempora vitae expedita quidem velit, itaque
+                laboriosam ratione molestiae ducimus ea dolorem iste.
+              </div>
+            </div>
+            <div>
+              <Item scr="slider1" />
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates distinctio alias possimus aperiam inventore ratione.
+                Fuga saepe tempora vitae expedita quidem velit, itaque
+                laboriosam ratione molestiae ducimus ea dolorem iste.
+              </div>
+            </div>
+            <div>
+              <Item scr="slider2" />
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates distinctio alias possimus aperiam inventore ratione.
+                Fuga saepe tempora vitae expedita quidem velit, itaque
+                laboriosam ratione molestiae ducimus ea dolorem iste.
+              </div>
+            </div>
+            <div>
+              <Item scr="slider3" />
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates distinctio alias possimus aperiam inventore ratione.
+                Fuga saepe tempora vitae expedita quidem velit, itaque
+                laboriosam ratione molestiae ducimus ea dolorem iste.
+              </div>
+            </div>
           </div>
-          <div>
-            <Item scr="biurko" />
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
-          </div>
-          <div>
-            <Item scr="slider1" />
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
-          </div>
-          <div>
-            <Item scr="slider2" />
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
-          </div>
-          <div>
-            <Item scr="slider3" />
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates distinctio alias possimus aperiam inventore ratione. Fuga saepe tempora vitae expedita quidem velit, itaque laboriosam ratione molestiae ducimus ea dolorem iste.</div>
-          </div>
+          <button role="button" aria-label="Previous" className="glider-prev">
+            «
+          </button>
+          <button role="button" aria-label="Next" className="glider-next">
+            »
+          </button>
         </div>
-        <button role="button" aria-label="Previous" className="glider-prev">
-          «
-        </button>
-        <button role="button" aria-label="Next" className="glider-next">
-          »
-        </button>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

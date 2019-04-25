@@ -76,7 +76,7 @@ const App = () => {
   const scrollBody = el => {
     let target = $("#" + $(el).attr("dest"));
     if (target.length) {
-      let offset = $("body").width() > 450? target.offset().top - 54: target.offset().top;
+      let offset = $("body").width() > 600? target.offset().top - 54: target.offset().top;
       $("html, body").animate(
         {
           scrollTop: offset
