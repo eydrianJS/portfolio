@@ -43,46 +43,24 @@ const About = () => {
             <div>
               <Item scr="slider" />
               <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates distinctio alias possimus aperiam inventore ratione.
-                Fuga saepe tempora vitae expedita quidem velit, itaque
-                laboriosam ratione molestiae ducimus ea dolorem iste.
+              Technologie i narzędzia w pracy komerccyjnej: <br/>
+              › ECMAScript5, JQuery, PHP, Python, HTML, CSS,  FreeMarker(ftl), XML, Groovy, Mongo<br/>
+              › NPM, GIT, Gulp, Webpack, Babel<br/>
+              › VSCode, Postman, Robo 3T, PgAdmin 4, 
               </div>
             </div>
             <div>
               <Item scr="biurko" />
               <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates distinctio alias possimus aperiam inventore ratione.
-                Fuga saepe tempora vitae expedita quidem velit, itaque
-                laboriosam ratione molestiae ducimus ea dolorem iste.
+              Technologie używane poza pracą komercyją<br/>
+              › ReactJS, Redux, NodeJS, ECMAScript6, Bootstrap
               </div>
             </div>
             <div>
               <Item scr="slider1" />
               <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates distinctio alias possimus aperiam inventore ratione.
-                Fuga saepe tempora vitae expedita quidem velit, itaque
-                laboriosam ratione molestiae ducimus ea dolorem iste.
-              </div>
-            </div>
-            <div>
-              <Item scr="slider2" />
-              <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates distinctio alias possimus aperiam inventore ratione.
-                Fuga saepe tempora vitae expedita quidem velit, itaque
-                laboriosam ratione molestiae ducimus ea dolorem iste.
-              </div>
-            </div>
-            <div>
-              <Item scr="slider3" />
-              <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates distinctio alias possimus aperiam inventore ratione.
-                Fuga saepe tempora vitae expedita quidem velit, itaque
-                laboriosam ratione molestiae ducimus ea dolorem iste.
+                  <a href='/pdf/Adrian-Olszowski-PL.pdf' download>Polskie CV</a>
+                  <a href='/pdf/Adrian-Olszowski.pdf' download>English CV</a>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ const items = [
         id: 3,
         title: "tytul",
         content: "Rozwój wewnętrznej aplikacji pomocniczej do obsługi bazy Oracle oraz bazy Postgress i Mongo z użyciem Python oraz Flask, Rozwój wewnętrznej aplikacji do przerzucania plików na serwer ftp(WinScp), utworzonej w NodeJs oraz Vue.JS",
-        img: "javascript.jpg",
+        img: "conf.jpg",
         delay: 300
     },
 ]

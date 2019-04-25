@@ -10,7 +10,7 @@ const Navbar = props => {
         <div className="nav">
           <div onClick={props.clickHome}>HOME</div>
           <div
-            className="js-scroll-trigger"
+            className="js-scroll-trigger active"
             dest="about"
             onClick={() => setOpenMenu(false)}
           >

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FirstPage from "./containers/portfolio/FirstPage";
 import Body from "./containers/portfolio/Body";
-import ToDoList from "./containers/todolist/ToDoList"
+import ToDoList from "./containers/todolist/ToDoList";
 import $ from "jquery";
 import AOS from "aos";
 import { TimelineMax, Power4 } from "gsap";
@@ -19,6 +19,21 @@ const App = () => {
     $("div.js-scroll-trigger").click(elem => {
       scrollBody(elem.target);
     });
+    $(window)
+      .scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+        $("section").each(function(i) {
+          let position = $(this).offset().top;
+          if (position <= scrollDistance +64) {
+            $(".nav div.active").removeClass("active");
+            $(".nav div")
+              .eq(i+1)
+              .addClass("active");
+          }
+        });
+      })
+      .scroll();
+
     AOS.init({
       duration: 1000,
       easing: "slide",
@@ -76,12 +91,15 @@ const App = () => {
   const scrollBody = el => {
     let target = $("#" + $(el).attr("dest"));
     if (target.length) {
-      let offset = $("body").width() > 600? target.offset().top - 54: target.offset().top;
+      let offset =
+        $("body").width() > 600
+          ? target.offset().top - 54
+          : target.offset().top;
       $("html, body").animate(
         {
           scrollTop: offset
         },
-        1000,
+        600,
         "easeInOutExpo"
       );
     }
@@ -89,15 +107,16 @@ const App = () => {
 
   return (
     <div className="App">
-      {
-        openToDoList? (
-          <ToDoList />
-        ) : openPage? (
-          <FirstPage click={() => setOpenPage(!openPage)} />
-        ) : (
-          <Body clickHome={() => setOpenPage(!openPage)} openTodo={() => setOpenToDoList(true)}  />
-        )
-      }
+      {openToDoList ? (
+        <ToDoList />
+      ) : openPage ? (
+        <FirstPage click={() => setOpenPage(!openPage)} />
+      ) : (
+        <Body
+          clickHome={() => setOpenPage(!openPage)}
+          openTodo={() => setOpenToDoList(true)}
+        />
+      )}
     </div>
   );
 };

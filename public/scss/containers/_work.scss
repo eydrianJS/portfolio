@@ -33,6 +33,7 @@
     height: 350px;
     width: 300px;
     border: solid 1px #f5f5f5;
+    padding: 10px;
     &::after {
       width: 20px;
     }
@@ -84,6 +85,7 @@
     }
     .project-border {
       margin: 0px;
+      padding: 10px;
       margin-bottom: 40px;
       @media (max-width: 940px) {
         margin-top: 120px;
