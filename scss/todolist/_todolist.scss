@@ -1,9 +1,18 @@
+.App {
+    display: unset;
+}
 .todoapp {
     button {
         height: auto;
         width: auto;
         font-size: 15px;
         overflow: hidden;
+        padding: 5px;
+        &.add-button {
+            height: auto;
+            width: auto;
+            padding: 15px;
+          }
     }
     input {
         margin: 15px;
@@ -14,8 +23,21 @@
         font-size: 20px
     }
     .form button {
-        padding: 3px 10pc;
         text-transform: uppercase;
     }
-    
+    color: #f5f5f5;
+    .tasks {
+        // border: 2px #f5f5f5 solid;   
+        // border-radius: 3%;
+        text-transform: uppercase;     
+    }
+    .task {
+        margin: 20px;
+        text-align: left;        
+        text-transform: capitalize;
+    }
+    .due-date-task {
+        text-align: right;     
+        margin: 20px;   
+    }
 }

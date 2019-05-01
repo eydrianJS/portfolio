@@ -2,14 +2,18 @@
   height: auto;
   padding: 3em;
   * {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Mukta', sans-serif;
     line-height: 56px;
     letter-spacing: 0.1em;
   }
   width: 100%;
   @media (min-width: 1240px) {
     min-height: 800px;
+    height: calc(100vh - 64px);
   }
+      @media (min-width: 650px) {
+        height: calc(100vh - 64px);
+      }
   background: #1b242f;
   text-align: center;
   margin: 0 auto;
