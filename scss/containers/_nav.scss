@@ -9,7 +9,6 @@ ul {
 }
 
 nav {
-  font-family: cursive;
   top: 0;
   left: 0;
   position: absolute;
@@ -63,8 +62,8 @@ nav {
     margin: 0;
     padding: 0;
     display: block;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     font-size: 40px; 
     position: fixed !important;
     opacity: 0.95;
@@ -72,8 +71,6 @@ nav {
   }
   .menu-flex-none {
     animation: hide 2s forwards;
-    width: 100vw;
-    height: 100vh;
   }
   .nav {
     margin-top: 30px;
@@ -91,7 +88,7 @@ nav {
       }
     }
     max-width: 1200px;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     top: 105px;
     background: #333;

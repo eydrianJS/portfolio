@@ -18,7 +18,6 @@ body {
 }
 
 .flex {
-  font-family: 'Lobster', cursive;
   .middle-box {
     font-size: 32pt;
     line-height: 36pt;
@@ -42,13 +41,12 @@ body {
       cursor: pointer;
       .mdi {
         display: inline-block;
-        font: normal normal normal 24px/1 ;
+        font: normal normal normal 24px/1 "Material Design Icons";
         font-size: inherit;
         text-rendering: auto;
         transform: translate(0, 0);
         transition: transform 0.5s;
       }
-      
     }
     button:hover {
       .mdi {
