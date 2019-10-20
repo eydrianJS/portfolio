@@ -5,7 +5,7 @@ const Animation = () => {
       <div className="animation" >
         <div className="future">
           I'm not a bug, <br/>
-          I'm a future
+          I'm a feature
         </div>
       </div>
   );
