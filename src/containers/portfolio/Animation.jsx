@@ -10,5 +10,5 @@ const Animation = () => {
       </div>
   );
 };
-
+ 
 export default Animation;
